@@ -98,10 +98,16 @@ service-worker: true
 
 # Friends
 friends: [
+    
     {
         title: "简书·弄码哥",
         href: "https://www.jianshu.com/u/a560f302e17a"
-    },{
+    },
+    {
+        title: "掘金·弄码哥",
+        href: "https://juejin.im/user/591922d8a22b9d005820d51c"
+    },
+    {
         title: "Apple",
         href: "https://apple.com"
     },{
