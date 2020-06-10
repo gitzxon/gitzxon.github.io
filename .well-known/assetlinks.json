@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fenbi.android.zebraenglish",
+      "sha256_cert_fingerprints":
+      ["70:D0:01:FF:8E:B6:96:42:21:34:65:D8:2A:DD:35:5D:5B:94:00:F8:40:50:F6:3D:34:FF:A2:F6:97:97:B4:2E"]
+    }
+  }]
