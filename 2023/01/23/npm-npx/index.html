@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"gitzxon.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="背景做开发工作几年了，平时也有记录一些坑、经验的习惯，但是都是在个人的笔记上。最近有一个感觉越来越强烈：虽然内容记录都记录在了大象（印象笔记）和 Notion 中，但是依然不是自己的。能通过博客用自己的语言输出的内容，才算是真正掌握了。于是开始搞 Github Pages 搭建博客。遇到的第一问题就是：如何选择博客引擎？众所周知，有时候最难的不是解决问题本身，而是做选择。 12而是尽量找一种，最好">
+  <meta name="description" content="npmnpm 是 NodeJs 的包管理工具。现代语言基本都有一个包管理工具。比如：  Python: pip Ruby: gem Java: maven, gradle C#: nuget PHP: composer Go: go mod, dep Rust: cargo Scala: sbt, ivy Swift: cocoapods, carthage  npxnpx 是 npm 的一个包运">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jeklly, hugo, hexo 如何选择?">
-<meta property="og:url" content="http://gitzxon.github.io/2023/01/23/jeklly-hugo-hexo-%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9/index.html">
+<meta property="og:title" content="npm &amp;&amp; npx 是什么关系？">
+<meta property="og:url" content="http://gitzxon.github.io/2023/01/23/npm-npx/index.html">
 <meta property="og:site_name" content="弄马哥 nomag">
-<meta property="og:description" content="背景做开发工作几年了，平时也有记录一些坑、经验的习惯，但是都是在个人的笔记上。最近有一个感觉越来越强烈：虽然内容记录都记录在了大象（印象笔记）和 Notion 中，但是依然不是自己的。能通过博客用自己的语言输出的内容，才算是真正掌握了。于是开始搞 Github Pages 搭建博客。遇到的第一问题就是：如何选择博客引擎？众所周知，有时候最难的不是解决问题本身，而是做选择。 12而是尽量找一种，最好">
+<meta property="og:description" content="npmnpm 是 NodeJs 的包管理工具。现代语言基本都有一个包管理工具。比如：  Python: pip Ruby: gem Java: maven, gradle C#: nuget PHP: composer Go: go mod, dep Rust: cargo Scala: sbt, ivy Swift: cocoapods, carthage  npxnpx 是 npm 的一个包运">
 <meta property="og:locale">
-<meta property="article:published_time" content="2023-01-23T03:03:30.000Z">
-<meta property="article:modified_time" content="2023-01-23T05:41:26.325Z">
+<meta property="article:published_time" content="2023-01-23T08:28:02.000Z">
+<meta property="article:modified_time" content="2023-01-23T08:33:27.008Z">
 <meta property="article:author" content="弄马哥 nomag">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://gitzxon.github.io/2023/01/23/jeklly-hugo-hexo-%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9/">
+<link rel="canonical" href="http://gitzxon.github.io/2023/01/23/npm-npx/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>jeklly, hugo, hexo 如何选择? | 弄马哥 nomag</title>
+  <title>npm && npx 是什么关系？ | 弄马哥 nomag</title>
   
 
 
@@ -151,7 +151,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="http://gitzxon.github.io/2023/01/23/jeklly-hugo-hexo-%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9/">
+    <link itemprop="mainEntityOfPage" href="http://gitzxon.github.io/2023/01/23/npm-npx/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -164,7 +164,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          jeklly, hugo, hexo 如何选择?
+          npm && npx 是什么关系？
         </h1>
 
         <div class="post-meta">
@@ -175,7 +175,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-01-23 11:03:30 / Modified: 13:41:26" itemprop="dateCreated datePublished" datetime="2023-01-23T11:03:30+08:00">2023-01-23</time>
+              <time title="Created: 2023-01-23 16:28:02 / Modified: 16:33:27" itemprop="dateCreated datePublished" datetime="2023-01-23T16:28:02+08:00">2023-01-23</time>
             </span>
 
           
@@ -200,22 +200,21 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>做开发工作几年了，平时也有记录一些坑、经验的习惯，但是都是在个人的笔记上。最近有一个感觉越来越强烈：虽然内容记录都记录在了大象（印象笔记）和 Notion 中，但是依然不是自己的。能通过博客用自己的语言输出的内容，才算是真正掌握了。于是开始搞 Github Pages 搭建博客。<br>遇到的第一问题就是：如何选择博客引擎？众所周知，有时候最难的不是解决问题本身，而是做选择。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">而是尽量找一种，最好是唯一种明显的解决方案</span><br><span class="line">There should be one-- and preferably only one --obvious way to do it.</span><br></pre></td></tr></table></figure>
-
-<h2 id="jeklly-hugo-hexo-如何选择"><a href="#jeklly-hugo-hexo-如何选择" class="headerlink" title="jeklly, hugo, hexo 如何选择?"></a>jeklly, hugo, hexo 如何选择?</h2><p>jeklly, hugo, hexo 都是比较常见的静态博客引擎。一般搭建个人博客的时候会用到。</p>
+        <h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><p>npm 是 NodeJs 的包管理工具。现代语言基本都有一个包管理工具。比如：</p>
 <ul>
-<li>Jekyll 是一个简单的静态博客引擎，它是用 Ruby 编写的。它支持 Markdown 和 Liquid 模板语言。GitHub Pages 默认使用 Jekyll 来构建静态博客。</li>
-<li>Hexo 是一个用 Node.js 编写的静态博客引擎。它支持 Markdown 和 EJS 模板语言。</li>
-<li>Hugo：是用Go语言编写的静态博客引擎，速度快，主题丰富，简单易用。</li>
+<li>Python: pip</li>
+<li>Ruby: gem</li>
+<li>Java: maven, gradle</li>
+<li>C#: nuget</li>
+<li>PHP: composer</li>
+<li>Go: go mod, dep</li>
+<li>Rust: cargo</li>
+<li>Scala: sbt, ivy</li>
+<li>Swift: cocoapods, carthage</li>
 </ul>
-<p>我的博客选择了 Hexo，记录一下决策过程。主要从语言、社区活跃度的角度出发。</p>
-<ol>
-<li>为什么不用 Jeklly？因为是 Ruby 写的。最近几年个人越来越感觉，互联网上 Ruby 的声音少了。相对应的社区活跃度对比 Js、Go 等，会差一点。</li>
-<li>为什么不用 Hugo？Hugo 在静态博客引擎中，算得上是后起之秀。开发社区比较活跃。但是考虑到博客更多是输出内容，美化、插件等，对于我来说能用就行，有解决方案就行。同时，因为是 Go 开发的，而我过往的开发经验在 Java、Kotlin 这块，对 Go 是零基础，没必要新开一个坑。Hugo 还有一个优势：编译速度快。在文章比较多的时候（100 以上）会比较明显。后续积累了比较多的内容后，可能会迁移到 Hugo，但是在此之前，还是聚焦在内容输出上。</li>
-</ol>
-<p>相比之下，Hexo 的 NodeJs，开发社区比较活跃，资料多，有问题的话，在 Stack Overflow 里面也能搜到许多信息（面向 Stack Overflow 编程）。Js 语言跟 Java、Kotlin 也基本差不多，语言成本不高。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>所以，最终我选择了 Hexo（配合比较常用的 Next 主题）。并计划在输出内容很多构建速度慢的问题比较突出并且 Hugo 的主题已经发展的非常成熟的情况下，切换成 Hugo。</p>
+<h1 id="npx"><a href="#npx" class="headerlink" title="npx"></a>npx</h1><p>npx 是 npm 的一个包运行工具，它可以帮助你在本地运行一个 npm 包中的命令行工具。它会在运行命令时自动安装该工具，并在运行完后自动删除，使得不用全局安装就能使用。</p>
+<p>比如你可以使用 npx create-react-app my-app 在本地运行 create-react-app 包中的命令，来创建一个新的 React 应用而不用全局安装 create-react-app。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>简单来说，npm 是用来管理安装和卸载包，npx 是用来运行这些安装好的包中的命令。</p>
 
     </div>
 
@@ -231,13 +230,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/01/23/hexo-next-%E5%90%AF%E5%8A%A8%E4%B9%B1%E7%A0%81/" rel="prev" title="hexo + next 显示乱码">
-      <i class="fa fa-chevron-left"></i> hexo + next 显示乱码
+    <a href="/2023/01/23/cat-touch/" rel="prev" title="cat && touch">
+      <i class="fa fa-chevron-left"></i> cat && touch
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2023/01/23/cat-touch/" rel="next" title="cat && touch">
-      cat && touch <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -296,7 +292,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jeklly-hugo-hexo-%E5%A6%82%E4%BD%95%E9%80%89%E6%8B%A9"><span class="nav-number">2.</span> <span class="nav-text">jeklly, hugo, hexo 如何选择?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#npm"><span class="nav-number">1.</span> <span class="nav-text">npm</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#npx"><span class="nav-number">2.</span> <span class="nav-text">npx</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E8%AE%BA"><span class="nav-number">3.</span> <span class="nav-text">结论</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
